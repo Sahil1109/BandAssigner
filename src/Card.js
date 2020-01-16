@@ -1,14 +1,14 @@
 import React from 'react'
 
-function Card() {
+function Card(props) {
     return (
-        <div>
-        <img alt=" No Image available" height="40px" width="60px"></img>
-        <br></br>
-        <h3>{this.headline}</h3>
-        <br></br>
-        <h5>Description</h5>
-        <button>Learn More</button>
+        <div className="card">
+        <img className="card-img-top" alt= "No Image available" src={props.featureImage}/>
+        <div className="card-body">
+        <h3 className="card-title">{props.title}</h3>
+        <p className="card-text">{props.description}</p>
+        <a href={props.link} className="btn btn-primary">Learn More</a>
+        </div>
         </div>
     )
 }
