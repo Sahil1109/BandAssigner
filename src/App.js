@@ -1,6 +1,61 @@
-import React, { Component } from 'react'
 import './App.css'
-import click1 from './click1.wav'
+
+import React from 'react'
+import FullCard from './FullCard'
+
+function App() {
+  return (
+    <div>
+    <FullCard/>
+    </div>
+  )
+}
+
+export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+/* import click1 from './click1.wav'
 import click2 from './click2.wav'
 
 class App extends Component {
@@ -10,7 +65,7 @@ class App extends Component {
     this.state = {
        bpm:100,
        playing: false,
-       beatsPerMeasure:0,
+       beatsPerMeasure:3,
        count:0,
 
     }
@@ -18,11 +73,13 @@ class App extends Component {
     this.click1= new Audio(click1);
     this.click2=new Audio(click2);
   }
-  handleBpmChange = event =>{const bpm = event.target.value;
+  handleBpmChange = event =>{
+    const bpm = event.target.value;
 
     if (this.state.playing) {
       // Stop the old timer and start a new one
       clearInterval(this.timer);
+
       this.timer = setInterval(this.playClick, (60 / bpm) * 1000);
   
       // Set the new BPM, and reset the beat counter
@@ -30,7 +87,8 @@ class App extends Component {
         count: 0,
         bpm
       });
-    } else {
+    }
+     else {
       // Otherwise just update the BPM
       this.setState({ bpm });
     }
@@ -93,6 +151,6 @@ class App extends Component {
       </div>
     )
   }
-}
+}  */}
 
-export default App
+
