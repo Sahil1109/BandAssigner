@@ -1,12 +1,11 @@
 import './App.css'
 
 import React from 'react'
-import FullCard from './FullCard'
 
 function App() {
   return (
     <div>
-    <FullCard/>
+    
     </div>
   )
 }
