@@ -1,11 +1,12 @@
 import './App.css'
 
 import React from 'react'
+import MasterForm from './Components/MasterForm'
 
 function App() {
   return (
     <div>
-    
+    <MasterForm/>
     </div>
   )
 }
