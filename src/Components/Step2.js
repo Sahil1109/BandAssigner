@@ -1,6 +1,9 @@
 import React from 'react'
 
 function Step2(props) {
+    if(props.currentStep!==2){
+        return null
+    }
     return (
         <div className="form-group">
         <label>Username</label>

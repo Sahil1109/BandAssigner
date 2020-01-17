@@ -22,14 +22,14 @@ class MasterForm extends Component {
         })
       }
         
-      _prev = () => {
+    _prev = () => {
         let currentStep = this.state.currentStep
         currentStep = currentStep <= 1? 1: currentStep - 1
         this.setState({
           currentStep: currentStep
         })
       }
-      handleChange = event => {
+    handleChange = event => {
         const {name, value} = event.target
         this.setState({
           [name]: value
@@ -85,11 +85,11 @@ class MasterForm extends Component {
             <Step2 
                 currentStep={this.state.currentStep} 
                 handleChange={this.handleChange}
-                email={this.state.username} />
+                username={this.state.username} />
             <Step3
                 currentStep={this.state.currentStep} 
                 handleChange={this.handleChange}
-                email={this.state.password} />
+                password={this.state.password} />
             {this.previousButton()}
             {this.nextButton()}
             </form></React.Fragment>
